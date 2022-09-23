@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-6">
+    <img [src]="imagePath.value" class="img-responsive">
+  </div>
+  <div class="col-md-6">
+    <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="eventTitle" class="form-label">Event Title</label>
+        <input type="text" class="form-control" id="eventTitle" formControlName="title">
+      </div>
+      <div class="mb-3">
+        <label for="imagePath" class="form-label">Image URL</label>
+        <input type="text" class="form-control" id="imagePath" formControlName="imagePath" #imagePath>
+      </div>
+      <div class="mb-3">
+        <label for="description">Description</label>
+        <textarea type="text" id="description" class="form-control" formControlName="description" rows="6">
+        </textarea>
+      </div>
+      <div class="mb-3">
+        <input type="datetime-local" class="form-control" id="date" formControlName="date">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

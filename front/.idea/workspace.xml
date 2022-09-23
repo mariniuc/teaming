@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f08ff65-4f98-4570-9664-6e1e3f660cb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events-component/events.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events-component/events.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events-component/events.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events-component/events.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/events/events.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/shared-components/navbar/navbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/shared-components/navbar/navbar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/shared-components/navbar/navbar.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/shared-components/navbar/navbar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/alert/alert.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/alert/alert.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/alert/alert.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/directives/dropdown.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/loading-spinner/loading-spinner.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/loading-spinner/loading-spinner.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/events/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/events/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/events/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2BWEHAkjJqc9ctskOVwAl6VFXY2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../teaming-backend" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\dan\dev\teaming\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dan\dev\teaming\src\app\components\events\events.component" />
+      <recent name="C:\Users\dan\dev\teaming\src\assets\images\events" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dan\dev\teaming\src\assets\images" />
+      <recent name="C:\Users\dan\dev\teaming\src\app\shared\loading-spinner" />
+      <recent name="C:\Users\dan\dev\teaming\src\app\shared\alert" />
+      <recent name="C:\Users\dan\dev\teaming\src\app\shared" />
+      <recent name="C:\Users\dan\dev\teaming\src\app\components\shared-components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f08ff65-4f98-4570-9664-6e1e3f660cb9" name="Default Changelist" comment="" />
+      <created>1657013350790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657013350790</updated>
+      <workItem from="1657013352150" duration="8755000" />
+      <workItem from="1657129039357" duration="602000" />
+      <workItem from="1659519625163" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1657127762270">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.2.1920.1040@0.0.1920.1040" timestamp="1657127762270" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1659519725099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="2517" height="274" key="GridCell.Tab.0.bottom/-2560.0.2560.1040/0.0.1920.1040@-2560.0.2560.1040" timestamp="1657014925653" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1920.1040@0.0.1920.1040" timestamp="1657109965103" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1659519725099" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center" timestamp="1659519725099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="2517" height="274" key="GridCell.Tab.0.center/-2560.0.2560.1040/0.0.1920.1040@-2560.0.2560.1040" timestamp="1657014925653" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1920.1040@0.0.1920.1040" timestamp="1657109965103" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1659519725099" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left" timestamp="1659519725099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="2517" height="274" key="GridCell.Tab.0.left/-2560.0.2560.1040/0.0.1920.1040@-2560.0.2560.1040" timestamp="1657014925653" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1920.1040@0.0.1920.1040" timestamp="1657109965103" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1659519725099" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right" timestamp="1659519725099">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="2517" height="274" key="GridCell.Tab.0.right/-2560.0.2560.1040/0.0.1920.1040@-2560.0.2560.1040" timestamp="1657014925653" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1920.1040@0.0.1920.1040" timestamp="1657109965103" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1659519725099" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1657105989257">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/1920.2.1920.1040@0.0.1920.1040" timestamp="1657105989257" />
+  </component>
+</project>
