@@ -20,6 +20,9 @@ export class User {
   description?: string;
 
   @Column()
+  imagePath?: string;
+
+  @Column()
   status?: UserStatus;
 
   @ManyToMany(() => Event, (event) => event.users)
