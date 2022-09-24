@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {EventDetailComponent} from "./event-component/event.component";
+import {EventDetailComponent} from './event-component/event.component';
 import {EventsResolverService} from "./services/events-resolver.service";
 import {EventUpdateComponent} from "./event-component/event-update/event-update.component";
 import {EventsComponent} from "./events-component/events.component";
