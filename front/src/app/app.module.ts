@@ -11,6 +11,7 @@ import {UserComponent} from './components/users/user-component/user.component';
 import {UsersComponent} from './components/users/users/users.component';
 import {UserUpdateComponent} from './components/users/user-component/user-update/user-update.component';
 import { SidebarComponent } from './components/shared-components/sidebar/sidebar.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { SidebarComponent } from './components/shared-components/sidebar/sidebar
     UsersComponent,
     UserUpdateComponent,
     SidebarComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
