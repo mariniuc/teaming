@@ -1,4 +1,4 @@
-import { IsArray, IsDate, IsNotEmpty, IsString } from 'class-validator';
+import { IsArray, IsNotEmpty, IsString } from 'class-validator';
 import { EventStatus } from '../utils/event-status';
 import { User } from '../../users/entities/user.entity';
 
@@ -14,14 +14,14 @@ export class CreateEventDto {
   @IsString()
   description: string;
 
-  @IsDate()
+  @IsString()
   @IsNotEmpty()
   date: string;
 
   @IsString()
   status: EventStatus;
 
-  @IsArray()
+  // @IsArray()
   images: string[];
 
   @IsArray()

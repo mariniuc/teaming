@@ -12,7 +12,7 @@ export class EventsService {
     @InjectRepository(Event) private eventsRepository: Repository<Event>,
   ) {}
 
-  async create(createEventDto: CreateEventDto) {
+  async create(createEventDto: any) {
     Logger.log(`Response to save event: ${JSON.stringify(createEventDto)}`);
     return await this.eventsRepository.save(createEventDto);
   }

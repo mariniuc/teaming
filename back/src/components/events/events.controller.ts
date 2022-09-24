@@ -21,8 +21,8 @@ export class EventsController {
   constructor(private readonly eventsService: EventsService) {}
 
   @Post()
-  @UsePipes(ValidationPipe)
-  async create(@Body() createEventDto: CreateEventDto) {
+  // @UsePipes(ValidationPipe)
+  async create(@Body() createEventDto: any) {
     Logger.log(`Request to save event`);
     return await this.eventsService.create(createEventDto);
   }
@@ -40,7 +40,10 @@ export class EventsController {
   }
 
   @Patch(':id')
-  async update(@Param('id') id: string, @Body() updateEventDto: UpdateEventDto) {
+  async update(
+    @Param('id') id: string,
+    @Body() updateEventDto: UpdateEventDto,
+  ) {
     return await this.eventsService.update(id, updateEventDto);
   }
 
