@@ -1,15 +1,22 @@
+import { Event } from '../events/event.model';
+
 export class User {
   public id: string;
-  public name: string;
+  public email: string;
+  public firstName: string;
+  public lastName: string;
   public description: string;
   public status: string;
   public imagePath: string;
+  public events: Event[];
 
-  constructor(id: string, name: string, description: string, status: string, imagePath: string) {
+  constructor(id: string, firstName: string, lastName: string, description: string, status: string, imagePath: string, events: Event[]) {
     this.id = id;
-    this.name = name;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.description = description;
     this.status = status;
     this.imagePath = imagePath;
+    this.events = events;
   }
 }
