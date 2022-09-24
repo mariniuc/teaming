@@ -18,13 +18,13 @@ export class EventsRestService {
   }
 
   createEvent(event: Event): Observable<HttpResponse<Event>> {
-    return this.httpClient.post<Event>(url, event, { observe: 'response' }).pipe(
-      catchError(this.handleError)
-    );
+    return this.httpClient.post<Event>(url, event, { observe: 'response' })
+      .pipe(catchError(this.handleError));
   }
 
-  updateEvent(id: string, event: Event) {
-    this.httpClient.patch(url + `/:${id}`, event).subscribe(response => console.log(response))
+  updateEvent(id: string, event: Event): Observable<HttpResponse<Event>> {
+    return this.httpClient.patch<Event>(url + `/:${id}`, event,  { observe: 'response' })
+      .pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {
