@@ -1,15 +1,16 @@
-import {Injectable, Logger, NotFoundException} from '@nestjs/common';
+import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 import { Event } from './entities/event.entity';
 import { EventDto } from './dto/event.dto';
-import {InjectRepository} from "@nestjs/typeorm";
-import {Repository} from "typeorm";
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class EventsService {
-  constructor(@InjectRepository(Event) private eventsRepository: Repository<Event>) {
-  }
+  constructor(
+    @InjectRepository(Event) private eventsRepository: Repository<Event>,
+  ) {}
 
   async create(createEventDto: CreateEventDto) {
     Logger.log(`Response to save event: ${JSON.stringify(createEventDto)}`);
@@ -20,20 +21,22 @@ export class EventsService {
     const events = await this.eventsRepository.find();
     Logger.log(`Response to get all events: ${JSON.stringify(events)}`);
     if (!events) {
-      throw new NotFoundException(
-          `There are no public events!`
-      );
+      throw new NotFoundException(`There are no public events!`);
     }
     return events;
   }
 
-  async findAllCreatedEventsByEmail(): Promise<Event[]> {
-    const events = await this.eventsRepository.find();
-    Logger.log(`Response to get all events: ${JSON.stringify(events)}`);
+  async findAllCreatedEventsByEmail(email: string): Promise<Event[]> {
+    const events = await this.eventsRepository.find({
+      where: {
+        creator: email,
+      },
+    });
+    Logger.log(
+      `Response to get all events by creator: ${JSON.stringify(events)}`,
+    );
     if (!events) {
-      throw new NotFoundException(
-          `User has no events`
-      );
+      throw new NotFoundException(`User has no events`);
     }
     return events;
   }
@@ -42,21 +45,17 @@ export class EventsService {
     const events = await this.eventsRepository.find();
     Logger.log(`Response to get all events: ${JSON.stringify(events)}`);
     if (!events) {
-      throw new NotFoundException(
-          `User has no events`
-      );
+      throw new NotFoundException(`User has no events`);
     }
     return events;
   }
 
   async findOne(id: string): Promise<EventDto> {
     const eventEntity = await this.eventsRepository.findOne({
-      where: {id: id}
+      where: { id: id },
     });
     if (!eventEntity) {
-      throw new NotFoundException(
-        `Event item doesn't exist`
-      );
+      throw new NotFoundException(`Event item doesn't exist`);
     }
     return eventEntity;
   }

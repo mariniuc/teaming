@@ -1,10 +1,15 @@
-import {Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn} from "typeorm";
-import {EventStatus} from "../utils/event-status";
-import {User} from "../../users/entities/user.entity";
+import {
+  Column,
+  Entity,
+  JoinTable,
+  ManyToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
+import { EventStatus } from '../utils/event-status';
+import { User } from '../../users/entities/user.entity';
 
 @Entity()
 export class Event {
-
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -23,7 +28,7 @@ export class Event {
   @Column()
   status?: EventStatus;
 
-  @Column()
+  @Column('text', { array: true })
   images?: string[];
 
   @ManyToMany(() => User, (user) => user.events)

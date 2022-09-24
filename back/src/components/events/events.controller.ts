@@ -5,13 +5,16 @@ import {
   Body,
   Patch,
   Param,
-  Delete, Logger, ValidationPipe, UsePipes,
+  Delete,
+  Logger,
+  ValidationPipe,
+  UsePipes,
 } from '@nestjs/common';
 import { EventsService } from './events.service';
 import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 import { EventDto } from './dto/event.dto';
-import {Event} from "./entities/event.entity";
+import { Event } from './entities/event.entity';
 
 @Controller('api/events')
 export class EventsController {
