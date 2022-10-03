@@ -4,7 +4,7 @@ import { UpdateEventDto } from './dto/update-event.dto';
 import { Event } from './entities/event.entity';
 import { EventDto } from './dto/event.dto';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { ILike, Like, Repository } from 'typeorm';
 
 @Injectable()
 export class EventsService {
@@ -20,7 +20,7 @@ export class EventsService {
   async findAll(): Promise<Event[]> {
     const events = await this.eventsRepository.find();
     Logger.log(`Response to get all events: ${JSON.stringify(events)}`);
-    if (!events) {
+    if (!events.length) {
       throw new NotFoundException(`There are no public events!`);
     }
     return events;
@@ -48,6 +48,13 @@ export class EventsService {
       throw new NotFoundException(`User has no events`);
     }
     return events;
+  }
+
+  async search(query): Promise<Event[]> {
+    const eventEntities = await this.eventsRepository.findBy({
+      title: Like(`%${query}%`),
+    });
+    return eventEntities;
   }
 
   async findOne(id: string): Promise<EventDto> {
