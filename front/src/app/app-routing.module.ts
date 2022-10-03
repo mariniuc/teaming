@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'events', pathMatch: 'full'},
+  {path: '', redirectTo: 'home-page', pathMatch: 'full'},
   {
     path: 'events',
     loadChildren: () =>
@@ -10,6 +11,7 @@ const routes: Routes = [
         m => m.EventsModule
       )
   },
+  {path: 'home-page', component: HomePageComponent},
 ];
 
 @NgModule({
