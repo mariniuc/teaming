@@ -4,6 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {DropdownDirective} from "./directives/dropdown.directive";
 import {AlertComponent} from "./alert/alert.component";
 import {LoadingSpinnerComponent} from "./loading-spinner/loading-spinner.component";
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,12 +16,14 @@ import {LoadingSpinnerComponent} from "./loading-spinner/loading-spinner.compone
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     LoadingSpinnerComponent,
     AlertComponent,
     DropdownDirective

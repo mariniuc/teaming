@@ -1,0 +1,44 @@
+.card {
+  z-index: 100;
+}
+body{
+  background-color: #eee;
+}
+.card{
+  background-color: #fff;
+  padding: 15px;
+  border:none;
+}
+.input-box{
+  position: relative;
+}
+.input-box img {
+  position: absolute;
+  right: 13px;
+  top:15px;
+  color:#ced4da;
+}
+.form-control{
+  height: 50px;
+  background-color:#eeeeee69;
+}
+.form-control:focus{
+  background-color: #eeeeee69;
+  box-shadow: none;
+  border-color: #eee;
+}
+.list{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.border-bottom{
+  border-bottom: 2px solid #eee;
+}
+.category-icon{
+  max-height: 20px;
+}
+.list small{
+  color:#dedddd;
+}
