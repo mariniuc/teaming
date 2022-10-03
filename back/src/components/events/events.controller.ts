@@ -9,6 +9,8 @@ import {
   Logger,
   ValidationPipe,
   UsePipes,
+  Req,
+  Query,
 } from '@nestjs/common';
 import { EventsService } from './events.service';
 import { CreateEventDto } from './dto/create-event.dto';
@@ -21,8 +23,8 @@ export class EventsController {
   constructor(private readonly eventsService: EventsService) {}
 
   @Post()
-  // @UsePipes(ValidationPipe)
-  async create(@Body() createEventDto: any) {
+  @UsePipes(ValidationPipe)
+  async create(@Body() createEventDto: any): Promise<CreateEventDto> {
     Logger.log(`Request to save event`);
     return await this.eventsService.create(createEventDto);
   }
@@ -31,6 +33,12 @@ export class EventsController {
   async findAll(): Promise<Event[]> {
     Logger.log(`Request to get all events`);
     return await this.eventsService.findAll();
+  }
+
+  @Get('search')
+  async search(@Req() req: Request, @Query() query): Promise<Event[]> {
+    Logger.log(`Request to get events by search ${query.query}`);
+    return await this.eventsService.search(query.query);
   }
 
   @Get(':id')
